@@ -1,0 +1,160 @@
+/* Disposición del selector universal para quitar los estilos predeterminados por el navegador  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* Creación de paleta de colores */
+    --negro-mate: #1b1a17;
+    --naranja-claro: #ff8303;
+    --beige: #f0e3ca;
+    --brown-select: #433d3c;
+    --white-claro: #f8f1f1;
+
+}
+
+/* Definición de medida para usar rem */
+html{
+    font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Barra - Header */
+.parent-container{
+    display: flex;
+    background-color: var(--negro-mate);
+}
+
+.barra-header-title{
+    margin: 10px;
+    flex: 2 0 auto;
+}
+
+.barra-header-title p{
+    font-size: 2rem;
+    color: #ffff;
+}
+
+.barra-header{
+    font-size: 2rem;
+    flex: 1 0 auto;
+}
+
+.barra-header-container{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.barra-header-container li{
+    border: 1px solid #ffff;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: var(--naranja-claro);
+    font-weight: 800;
+}
+.barra-header-container a{
+    text-decoration: none;
+    color: var(--negro-mate);
+} 
+
+
+/* Contenedor Main */
+
+main{
+    background: var(--beige);
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#title{
+    background: var(--naranja-claro);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#title p{
+    margin: 10px;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+#img-div{
+    background: var(--brown-select);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#image {
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+} 
+
+#img-caption{
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: var(--white-claro);
+}
+
+#tribute-info{
+    margin: 50px;
+    font-size: 1.5rem;
+}
+
+.this-jobs{
+    font-size: 1.8rem;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.line-time li{
+    margin: 1.5rem;
+}
+
+#tribute-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    color: var(--negro-mate);
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    color: var(--white-claro);
+    background-color: var(--brown-select);
+    text-decoration: none;
+}
+
+.tribute-info--mensaje {
+    text-align: center;
+}
+
+
+
+/* Footer */
+footer{
+    margin: 10px;
+    background-color: var(--negro-mate);
+    border-radius: 5px;
+    color: var(--white-claro);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800px;
+}
