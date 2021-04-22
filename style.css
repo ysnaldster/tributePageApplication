@@ -127,25 +127,37 @@ main{
     margin: 1.5rem;
 }
 
-#tribute-link{
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-    color: var(--negro-mate);
-    border: 1px solid #000;
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px;
-    color: var(--white-claro);
-    background-color: var(--brown-select);
-    text-decoration: none;
+
+.tribute-info--mensaje strong{
+    display: inline-block;
+    margin: 20px 0px 5px 0px;
 }
+
 
 .tribute-info--mensaje {
     text-align: center;
 }
 
+.tribute-link-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
 
+#tribute-link{
+    background-color:  var(--brown-select);
+    border: 1px solid var(--brown-select);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-claro);
+    padding: 8px;
+    margin: 10px;
+}
+
+#tribute-link:hover{
+    transform: scale(1.2, 1.2);
+}
 
 /* Footer */
 footer{
@@ -158,3 +170,5 @@ footer{
     font-size: 1.5rem;
     font-weight: 800px;
 }
+
+
